@@ -1,5 +1,3 @@
-import {games} from './games.js';
-
 const init_game = function () {
     if (window.location.href.split('?').length < 2) {
         return;

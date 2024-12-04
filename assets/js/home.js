@@ -1,4 +1,4 @@
-import { games } from './games.js';
+// import { games } from './games.js';
 
 let pinGame = games[Math.floor(Math.random() * games.length)]
 if (!pinGame) {
