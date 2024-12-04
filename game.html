@@ -86,14 +86,8 @@
                     <div class="game-preloader">
                         <div class="game-preloader-image" onclick="startGame()">
                             <picture>
-
-                                <!-- AVIF image source -->
-                                <source id="avif_game_preloader_image"
-                                        srcset="assets/uploads/2024/11/sprunki-mustard-001-568x320.avif"
-                                        type="image/avif">
-
                                 <!-- Fallback image source (e.g., .jpg or .png) -->
-                                <img id="fallback_game_preloader_icon_image" alt="Sprunki Mustard [Sprunkstard]"
+                                <img id="fallback_game_preloader_image" alt="Sprunki Mustard [Sprunkstard]"
                                      class="gameplayimg"
                                      loading="lazy" src="assets/uploads/2024/11/sprunki-mustard-001-568x320.png"
                                      style="max-width: 300px; height: auto;">
@@ -124,11 +118,6 @@
 
                     <div class="w" data-wp-editing="1">
                         <picture>
-
-                            <!-- AVIF image source -->
-                            <source id="avif_icon_image" srcset="assets/uploads/2024/11/sprunki-mustard-001-80x80.avif"
-                                    type="image/avif">
-
                             <!-- Fallback image source (e.g., .jpg or .png) -->
                             <img id="fallback_icon_image" alt="Sprunki Mustard [Sprunkstard]" class="gameplayimg"
                                  height="100%" src="assets/uploads/2024/11/sprunki-mustard-001-80x80.png" width="40">
@@ -217,59 +206,10 @@
                                       shape-rendering="geometricPrecision"></path>
                             </svg>
                         </div>
-                        <p class="votes svelte-148wfty">583 votes</p></div>
+                        <p id="game-vote" class="votes svelte-148wfty">583 votes</p></div>
 
 
-                    <p>The <strong><a href="">Sprunki</a> Mustard Mod</strong>—also known as <em>Sprunkstard</em> or
-                        <em>If Sprunki Were in Mustard</em>—is a unique twist on the classic <em>Incredibox Sprunki</em>
-                        experience. This vibrant yet unsettling mod bathes the entire game in a mustard-yellow theme,
-                        from the character designs to the game interface, creating a surreal and intense atmosphere.
-                        Fans of <em>Incredibox</em> and <em>Sprunki</em> will appreciate the fresh take on character
-                        aesthetics and the new, eerie vibe this mod introduces to the music-making gameplay.</p>
-                    <h2>What is Sprunki Mustard Mod</h2>
-                    <p>In the <em>Incredibox Sprunki Mustard Horror Mod</em>, each character is reimagined with a
-                        mustard-yellow color scheme, adding a haunting, monochromatic twist to the usual dynamic
-                        visuals. The game’s interface is similarly transformed, enveloping players in a mustard-colored
-                        world that feels both whimsical and eerie. This mod pushes players to think creatively as they
-                        experiment with unique sounds, ultimately crafting compositions that complement the mod’s
-                        distinctive theme.</p>
-                    <h3>How to Play Sprunki Mustard Sprunkstard Game</h3>
-                    <p>Playing the <em>Sprunki Mustard Mod</em> is straightforward and familiar to fans of the <em>Incredibox</em>
-                        series:</p>
-                    <ol>
-                        <li><strong>Choose Mustard-Themed Characters</strong>: Each character has a unique sound
-                            element, now stylized to match the mustard color scheme.
-                        </li>
-                        <li><strong>Drag and Drop Sounds</strong>: To create music, drag characters into the main
-                            composition area. Each character adds a beat, melody, or vocal line to the track.
-                        </li>
-                        <li><strong>Experiment with Horror Elements</strong>: Mix different character sounds to uncover
-                            new, spooky combinations. Certain arrangements may even trigger hidden animations, adding to
-                            the horror vibe.
-                        </li>
-                    </ol>
-                    <h3>Features of Sprunki is Mustard Horror Mod</h3>
-                    <ul>
-                        <li><strong>Mustard-Themed Characters and Interface</strong>: All characters are shaded in
-                            mustard yellow, creating a striking and cohesive aesthetic.
-                        </li>
-                        <li><strong>New Horror Elements</strong>: The eerie color scheme and unique sound combinations
-                            contribute to an unsettling, horror-inspired ambiance.
-                        </li>
-                        <li><strong>Creative Music Compositions</strong>: Each character’s sound can be layered to build
-                            complex, immersive tracks tailored to the mod&#8217;s style.
-                        </li>
-                        <li><strong>Bonus Animations</strong>: Discover special animations triggered by specific sound
-                            combinations, adding depth to the horror theme.
-                        </li>
-                    </ul>
-                    <p>The <em>Incredibox Sprunki Mustard game</em> is a refreshing, visually distinct mod that combines
-                        creativity with a haunting twist. Whether you’re a long-time <em>Incredibox</em> fan or a new
-                        player exploring the world of <em>Sprunki</em>, this mustard-themed horror mod provides a
-                        uniquely captivating music-making experience. Also Play <a href="game/sprunki-scratch/">Sprunki
-                            Scratch</a>, <a href="game/sprunki-x-melophobia/">Sprunki x Melophobia</a>, <a
-                                href="game/sprunki-banana-edition/">Sprunki: Banana Edition</a> and <a
-                                href="game/mr-fun-computer-test/">FNF: Mr. Fun Computer Test</a></p>
+                    <div id="game-description"></div>
                 </div>
                 <div id="readmore" style="display: block;"></div>
                 <div id="readless" style="display: none;"></div>
@@ -328,5 +268,5 @@
 </footer>
 
 </body>
-<script src="assets/js/loadgame.js?v=4.0"></script>
+<script type="module" src="assets/js/game.js"></script>
 </html>
